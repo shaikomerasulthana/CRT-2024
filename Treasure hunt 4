@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int gold_coins,bens_share,blackbeard_share;
+    scanf("%d%d%d",&gold_coins,&bens_share,&blackbeard_share);
+    int longbeans_share=(floor)(gold_coins*bens_share/100);
+    int a=gold_coins-longbeans_share;
+    int blackbeards_share=(floor)(a*blackbeard_share/100);
+    int b=(floor)(a-blackbeards_share);
+    int pirates_share=b/3;
+    printf("%d\n%d\n%d",longbeans_share,blackbeards_share,pirates_share);
+    return 0;
+}
