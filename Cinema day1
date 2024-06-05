@@ -1,0 +1,18 @@
+include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int day,mon,year,stu;
+    scanf("%d%d%d%d",&day,&mon,&year,&stu);
+    if((day+mon+year)%(3*4)==0 && (stu>50&&stu<100))
+    {
+        printf("Cinema day");
+    }
+    else
+    {
+        printf("Not a Cinema day");
+    }
+}
