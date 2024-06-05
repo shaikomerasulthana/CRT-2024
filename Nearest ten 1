@@ -1,0 +1,20 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int a;
+    scanf("%d",&a);
+    int rem=a%10;
+    if(rem<5)
+    {
+        printf("%d",a-rem);
+    }
+    else
+    {
+        printf("%d",a+(10-rem));
+    }
+    return 0;
+}  
