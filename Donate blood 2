@@ -5,7 +5,8 @@
 
 int main() {
 
-    int age,weight;
+    int age;
+    int weight;
     float hemoglobin;
     scanf("%d\n %d\n %f",&age,&weight,&hemoglobin);
         if(age>=18 && weight>=45 && hemoglobin>=5.5)
