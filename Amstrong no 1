@@ -1,0 +1,25 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    int num,sum=0;
+    scanf("%d",&num);
+    int temp=num;
+    int n=log10(num)+1;
+    while(num>0)
+    {
+        int r1=num%10;
+        num=num/10;
+        sum=sum+pow(r1,n);
+    }
+    if(sum==temp)
+    {
+        printf("Yes");
+    }else{
+        printf("No");
+    }
+    return 0;
+}
