@@ -1,0 +1,17 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+    int num;
+    int sum=0;
+    for(;;){
+        scanf("%d\n",&num);
+        if(num==-1){
+            break;
+        }
+        sum=sum+num;
+    }
+    printf("%d",sum);
+}
