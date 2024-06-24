@@ -1,0 +1,24 @@
+Write a program to sum of even and odd elements in an array
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n;
+    scanf("%d",&n);
+    int a[n],i,so=0,se=0;
+    for(i=0;i<n;i++){
+        scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++){
+    if(a[i]%2!=0)
+        so=so+a[i];
+        else
+            se=se+a[i];
+    }
+    printf("%d\n%d\n",so,se);
+    return 0;
+}
