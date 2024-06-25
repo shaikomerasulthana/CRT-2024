@@ -1,0 +1,24 @@
+#include <stdio.h>
+#include <string.h>
+#include <math.h>
+#include <stdlib.h>
+
+int main() {
+
+    /* Enter your code here. Read input from STDIN. Print output to STDOUT */ 
+    int n,lb,hb;
+    scanf("%d%d%d",&n,&lb,&hb);
+    int a[n],i;
+    for(i=0;i<n;i++)
+    {
+     scanf("%d",&a[i]);
+    }
+    for(i=0;i<n;i++)
+    {
+        if(a[i]>lb && a[i]<hb)
+        {
+            printf("%d ",a[i]);
+        }
+    }
+    return 0;
+}
